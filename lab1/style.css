@@ -1,0 +1,79 @@
+nav{
+	display: block;
+	margin-bottom: 10px;
+
+}
+
+nav #id{
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  color: #222222;
+  
+}
+html {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #222222;
+  height: 100%;
+}
+
+nav ul{
+	list-style: none;
+	font-size: 24px;
+	color: #485b7a
+}
+
+nav ul li{
+	display: inline;
+}
+body {
+  height: 100%;
+}
+
+a {
+  transition: all 0.25s;
+  text-decoration: none;
+  color: #485b7a;
+}
+
+a:hover {
+  color: #AAAAAA;
+  cursor: pointer;
+}
+aside{
+
+	width: 200px;
+	float: right;
+	margin: 0 20px;
+}
+
+p {
+  padding: 0.7em 0 0.7em 0;
+  line-height: 2em;
+}
+body,  html, p, a, h1, h2, h3, h5, h6, button, ul, li, header {
+  margin: 0;
+  padding: 0;
+}
+
+
+header #banner{
+	padding: 10px;
+    color: white;
+    background-color: black;
+}
+article{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding : 2px 16px;
+    float: left;
+    width: 300px;
+}
+main{
+	width = 200px;
+	float: left;
+}
+
+footer{
+	float: bottom;
+}
