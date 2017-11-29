@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quorio.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj0pS-iu-9y2EKDrJlo7a2_X-qCsXpVno&callback=initMap">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="map"  style="width:300px;height:300px; float: right; position: relative;  padding:  20px 0 0 1.5rem; padding-top: 20px; float: top"></div>
+    
+
+
+    
+    
+    <!-- header start -->
+    <header id="wrapper-header">
+        <div id="header-logo"><a href="#">Quorio</a></div>
+        <nav id="header-nav-bar">
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Favourite Answers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End of header -->
+
+    <section class="section-non-footer">
+        <!-- Left navbar -->
+        <section class="section-nav-bar">
+            <nav id="left-nav-bar">
+                <ul>
+                <li><a href="#blockchain_wrapper" onclick="filterPostByTag('Blockchain')">Blockchain</a></li>
+                <li><a href="#ether_wrapper" onclick="filterPostByTag('Ethereum')">Ethereum</a></li>
+                <li><a href="#innovation_wrapper" onclick="filterPostByTag('Innovation')">Innovation</a></li>
+                <li><a href="#hackernoon_wrapper" onclick="filterPostByTag('Hackernoon')">Hackernoon</a></li>
+                <li><a href="#show_all" onclick="filterShowAll()">Show All</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- End of left navbar -->
+
+        <!-- Main section -->
+        <main id="show_all" class="show">
+
+            <div id="blockchain_wrapper" class="Blockchain">
+            <h2> Blockchain </h2>
+
+            <a href="#Blockchain" class="btn btn-info" style=" background-color: #800000;" data-toggle="collapse">Surf</a>
+
+            <div id="Blockchain">
+            <section id="answer-section" class="Blockchain"  >
+                <article>
+                    <h3>What is Blockchain?</h3>
+                    
+                    <p>A blockchain, or distributed ledger, is mostly known for the first technology it enabled, the Bitcoin, which Satoshi Nakamoto first described in a paper in 2008. I will try to provide a general overview of the technology and its potential, from both practical and technical perspectives, which you should be able to understand without any previous knowledge on the blockchain.</p>
+                    
+                    
+                    <br>
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+                    </button>
+                </article>
+                <article>
+                    <h3>What is a digital ledger?</h3>
+                    
+                    <p>Distributed ledger technology (DLT) is a digital system for recording the transaction of assets in which the transactions and their details are recorded in multiple blocks.</p>
+                    
+                    <br>
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+                    </button>
+                </article>
+                
+            </section>
+            </div>
+            </div>
+
+            <div id="ether_wrapper" class= "Ethereum">
+            <h2> Ethereum </h2>
+            <a href="#Ethereum" class="btn btn-info" style=" background-color: #800000;" data-toggle="collapse">Surf</a>
+            <div id="Ethereum" class="collapse">
+            <section id="answer-section" class="Ethereum">
+                <article>
+                    <h3>What is Ethereum?</h3>
+                    
+                    <p>At its simplest, Ethereum is an open software platform based on blockchain technology that enables developers to build and deploy decentralized applications. Is Ethereum similar to Bitcoin? Well, sort of, but not really. Like Bitcoin, Ethereum is a distributed public blockchain network.</p>
+                    
+                    
+                    <br>
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+                    </button>
+                </article>
+                <article>
+                    <h3>How can I invest in Ethereum? </h3>
+                    
+                    <p>Sign up for Coinbase. The first step is to sign up for a Coinbase account. ...
+                        Connect Your Bank Account, Credit Card or Debit Card. After you sign up, connect your bank account, credit card or debit card. ...
+                        Buy and Sell Ethereum.</p>
+                    
+                    <br>
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+                    </button>
+                </article>
+                
+            </section>
+            </div>
+            </div>
+            <div id="innovation_wrapper" class="Innovation">
+            <h2> Innovation </h2>
+
+            <a href="#Innovation" class="btn btn-info" style=" background-color: #800000;" data-toggle="collapse">Surf</a>
+
+            <div id="Innovation">
+            <section id="answer-section" class="Innovation"  >
+                <article>
+                    <h3>What is the Easiest-Flying Drone?</h3>
+                    
+                    <p>If you’ve thrown a paper plane, you can launch the Parrot Disco. Toss the 1.6-pound drone into the sky, and onboard sensors—gyroscope, accelerometer, magnetometer, barometer, and GPS—navigate the fixed-wing craft to 150 feet, where it circles awaiting further command. Users set a course via remote control, and algorithms on board keep the drone on track. A top speed of 50 mph means you won’t be losing any races.</p>
+                    
+                    
+                    <br>
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+                    </button>
+                </article>
+                <article>
+                    <h3>How to get the Most Colorful Picture</h3>
+                    
+                    <p>Even the best 4K TVs can swallow up details in the darkest and brightest parts of the image. High-dynamic range (HDR)—a catchall term for video encoded with a billions-deep color gamut—brings those nuances into the forefront. LG’s Signature OLED TVs render colors better than any other. The sets support both the HDR10 and Dolby Vision HDR standards, so viewers can count on seeing the full rainbow, no matter their content source.</p>
+                    
+                    <br>
+                    <button type="button" class="btn btn-default btn-lg">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+                    </button>
+                </article>
+                
+            </section>
+            </div>
+            </div>
+            
+
+
+        </main>
+
+       
+      
+        <aside style="margin-top: 100px ">
+            <section id="section-right-news">
+                <article>
+                    <a href="#"><h4>Ahmedabad</h4></a>
+                    
+                </article>
+                <article>
+                    <a href="#"><h4>New Delhi</h4></a>
+                    
+                </article>
+                <article>
+                    <a href="#"><h4>Hyderabad</h4></a>
+                    
+                </article>
+                <article>
+                    <a href="#"><h4>Kolkata</h4></a>
+                    
+                </article>
+                <article>
+                    <a href="#"><h4>Bangalore</h4></a>
+                    
+                </article>
+
+
+                
+            </section>
+             </aside>
+
+      <!-- End of Right panel -->
+    </section>
+    
+
+</body>
+
+</html>
